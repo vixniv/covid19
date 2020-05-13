@@ -39,11 +39,17 @@ body {
     color: #ffffff;
     font-size: 17px;
     width: 70px;
+    display: inline;
 }
 .up span{
-    background-color: blueviolet;
     padding: 3px 9px;
     border-radius: 7px;
+}
+.up2 {
+    background-color: blueviolet;
+}
+.up3 {
+    color: #818181;
 }
 .foot {
     text-align: center;
