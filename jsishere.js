@@ -9,7 +9,14 @@ $(document).ready(function(){
         url: api2,
         success: function(result) {
             let result2 = JSON.parse(result);
-            let kasus = result2.features[0].attributes
+            let kasus = result2.features[0].attributes;
+
+            let dateStamp= kasus.Last_Update;
+            let currentTime = new Date(dateStamp);
+            let month = currentTime.getMonth() + 1;
+            let day = currentTime.getDate();
+            let year = currentTime.getFullYear();
+            let date = day + "-" + month + "-" + year;
 
             function commas(x) {
                 return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -18,7 +25,7 @@ $(document).ready(function(){
             $("#positif").text(commas(kasus.Confirmed));
             $("#sembuh").text(commas(kasus.Recovered));
             $("#meninggal").text(commas(kasus.Deaths));
-            $("#tgl").text(tglrev);
+            $("#tgl").text(date);
         
             /*let kasus = result[result.length - 1];
             let tgl = kasus.Date;
@@ -39,7 +46,7 @@ $(document).ready(function(){
     
     });
 
-    $.ajax({
+    /*$.ajax({
         url: api,
         success: function(result) {
             let kasus = result[result.length - 1];
@@ -51,7 +58,7 @@ $(document).ready(function(){
         
         }
     
-    });
+    });*/
     
         /*$.ajax({url: api, success: function(result){
          $("#terjangkit").html(result[0].positif);

@@ -26,13 +26,13 @@ body {
     border: 3px solid #000;
     border-radius: 7px;
 }
-.child h1{
+.child h1 {
     margin-bottom: 20px;
     font-size: 30px;
-    font-family:'Roboto Mono',monospace;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 700;
 }
-.report{
+.report {
     font-size: 20px;
 }
 .up {
@@ -41,7 +41,7 @@ body {
     width: 70px;
     display: inline;
 }
-.up span{
+.up span {
     padding: 3px 9px;
     border-radius: 7px;
 }
@@ -56,6 +56,13 @@ body {
     margin-top: 20px;
     font-size: 17px;
     color: #818181;
+}
+.footlink {
+    color: #818181;
+    text-decoration: none;
+}
+.footlink:hover {
+    color: blueviolet;
 }
 
 @media only screen and (max-width:600px) {
