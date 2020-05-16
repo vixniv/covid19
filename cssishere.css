@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'VT323', monospace;
 }
 body {
     font-family: 'VT323', monospace;
@@ -32,6 +33,9 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
 }
+.child h1 *{
+    font-family: 'Roboto Mono', monospace;
+}
 .report {
     font-size: 20px;
 }
@@ -56,6 +60,7 @@ body {
     margin-top: 20px;
     font-size: 17px;
     color: #818181;
+    line-height: 20px;
 }
 .footlink {
     color: #818181;
@@ -63,6 +68,12 @@ body {
 }
 .footlink:hover {
     color: blueviolet;
+}
+.nomargin{
+    margin: 0;
+}
+.nomarginbottom{
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width:600px) {
